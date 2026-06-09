@@ -16,8 +16,9 @@ body {
 }
 
 .card-img-top {
-    object-fit: cover;
+    object-fit: contain;
     height: 180px;
+    background-color: #f8f9fa;
 }
 
 .btn-primary {
@@ -45,7 +46,8 @@ body {
 .img-fluid.rounded {
     width: 100%;
     max-height: 400px;
-    object-fit: cover;
+    object-fit: contain;
+    background-color: #f8f9fa;
 }
 
 .alert {

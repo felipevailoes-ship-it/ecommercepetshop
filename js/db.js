@@ -145,6 +145,6 @@ async function criarAdminPadrao() {
     }
 }
 
-// Funcção que criar o usuário admin padrão no banco
+// Função que criar o usuário admin padrão no banco
 
 criarAdminPadrao();

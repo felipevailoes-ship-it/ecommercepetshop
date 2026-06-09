@@ -33,3 +33,8 @@ async function fazerLogin() {
         window.location.href = 'index.html';
     }
 }
+
+function sair() {
+    sessionStorage.removeItem('usuarioLogado');
+    window.location.href = 'login.html';
+}
