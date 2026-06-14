@@ -65,6 +65,17 @@ async function carregarDestaque() {
 async function filtrarCategoria(categoria) {
     const titulo = document.getElementById('tituloLista');
     const container = document.getElementById('listaProdutos');
+    const secaoDestaque = document.getElementById('produtosDestaque');
+    const tituloDestaque = document.querySelector('h4.mt-4');
+
+    // Mostra ou esconde os destaques
+    if (categoria === 'Todos') {
+        secaoDestaque.style.display = 'flex';
+        tituloDestaque.style.display = 'block';
+    } else {
+        secaoDestaque.style.display = 'none';
+        tituloDestaque.style.display = 'none';
+    }
 
     const produtos = categoria === 'Todos'
         ? await listarProdutos()

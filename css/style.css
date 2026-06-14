@@ -1,5 +1,5 @@
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .navbar {
@@ -16,7 +16,7 @@ body {
 }
 
 .card-img-top {
-    object-fit: contain;
+    object-fit: contain !important;
     height: 180px;
     background-color: #f8f9fa;
 }
@@ -63,4 +63,14 @@ body {
     .card-img-top {
         height: 140px;
     }
+}
+
+.navbar-nav .nav-link {
+    border-radius: 6px;
+    transition: border 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.navbar-nav .nav-link:hover {
+    border: 1px solid rgba(255, 255, 255, 0.6);
 }

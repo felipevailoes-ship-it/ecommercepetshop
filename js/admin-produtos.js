@@ -18,6 +18,10 @@ function exibirMensagem(texto, tipo) {
     setTimeout(() => mensagem.classList.add('d-none'), 3000);
 }
 
+document.getElementById('nome').addEventListener('input', function() {
+    document.getElementById('descricao').value = this.value;
+}); // Preenche o campo descrição de acordo com o nome inserido no produto
+
 async function salvarProduto() {
     const nome = document.getElementById('nome').value.trim();
     const categoria = document.getElementById('categoria').value;
